@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat Kohli</title>
+    <link rel="stylesheet" href="round3.css">
+</head>
+<body>
+    <section class="header">
+        <div class="coverphoto">
+
+            <div class="profileimg">
+                <ul><img src="vkimages/vk7.jfif" alt=""></ul>
+            </div>
+        </div>
+        <div class="coverbottom">
+            <ul><h4>Virat Kohli</h4>
+                <p> Kohli is an Indian international cricketer and former captain of the India national cricket team. He plays for Delhi in domestic cricket and Royal Challengers Bangalore in the Indian Premier League as a right-handed batsman. He is often considered one of the best batsmen of his era and some critics believe him to be one of the best limited-overs batsmen in history. Between 2013 and 2022, he captained the India cricket team in 213 matches across all three formats. With 40 wins out of 68 test matches, Kohli is the most successful test captain in Indian cricket history.</p></ul>
+        </div>
+        <div class="nav">
+            <h3>Click below to see the stats</h3>
+            <ul>
+                <li><span onclick="batstat()">Batting Stat</span></li>
+                <li><span onclick="bowlstat()">Fielding Stat</span></li>
+                <li><span onclick="fielstat()">Bowling Stat</span></li>
+                <li><span onclick="moreinfo()">moreinformation</span></li>
+            </ul>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="stat">
+            <div class="batstat" id="batstat">
+                <h1>Batting Stats</h1>
+                <img src="vkimages/statbat.png" style="width: 400px;" alt="">
+                <span onclick="closebatstat()">close</span>
+            </div>
+            <div class="bowlstat" id="bowlstat">
+
+                <h1>Bowling Stats</h1>
+                <img src="vkimages/statbat.png" style="width: 400px" alt="">
+                <span onclick="closebowlstat()">close</span>
+            </div>
+            <div class="fieldstat" id="fieldstat">
+                <h1>Fielding Stats</h1>
+                <img src="vkimages/statbat.png" style="width: 400px;" alt="">
+                <span onclick="closefieldstat()">close</span>
+            </div>
+            <div class="moreinfo" id="moreinfo">
+                <h1>moreinfo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem adipisci ipsum, at dolorum in, vel aliquam ducimus fugiat illum natus nobis sunt incidunt nesciunt nihil totam perspiciatis, provident voluptatem quaerat.
+                    
+                </p>
+                <span onclick="closemoreinfo()">close</span>
+            </div>
+        </div>
+    </section>
+    <script>
+        function batstat(){
+        document.getElementById("batstat").style.left = "30"
+        }
+        function bowlstat(){
+            document.getElementById("bowlstat").style.left = "30"
+            }
+            function fielstat(){
+                document.getElementById("fieldstat").style.left = "30"
+                }
+                function moreinfo(){
+                    document.getElementById("moreinfo").style.left = "30"
+                }
+        function closebatstat(){
+            document.getElementById("batstat").style.left = "-800"
+        }
+        function closebowlstat(){
+            document.getElementById("bowlstat").style.left = "-800"
+        }
+        function closefieldstat(){
+            document.getElementById("fieldstat").style.left = "-800"
+        }
+        function closemoreinfo(){
+            document.getElementById("moreinfo").style.left = "-800"
+        }
+    </script>
+    <section>
+
+    </section>
+</body>
+</html>

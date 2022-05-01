@@ -1,0 +1,127 @@
+.header{
+    width: auto;
+    border: 2px solid black;
+}
+.coverphoto{
+    width: 100%;
+    height: 250px;
+    background-image: url("vkimages/vk6.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.profileimg ul img{
+    width: 140px;
+    height: 140px;
+    float: left;
+    margin-top: 190px;
+    border-radius: 80px;
+    border: 4px solid black;
+}
+.coverbottom ul h4{
+    padding: 3px;
+    color: rgb(71, 71, 179);
+    font-size: 30px;
+    margin-left: 180px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+.coverbottom p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 4px;
+    margin-right: 10px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.profileimg{
+    display: flex;
+}
+body{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.sec2{
+    left: 0;
+    position: absolute;
+    width: auto;
+    border: 2px solid black;
+}
+.batstat, .bowlstat, .fieldstat, .moreinfo{
+    cursor: pointer;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+    width: auto;
+    position: absolute;
+    left: -800;
+    transition: 2s;
+}
+
+.nav ul {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+}
+.nav ul li{
+    border: 2px solid black;
+    padding: 4px 0;
+    list-style: none;
+}
+.nav ul li span{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(71, 71, 179);
+    padding: 10px 20px;
+}
+.nav{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .header{
+        height: 100%;
+    }
+    .coverphoto{
+        height: 200px;
+    }
+    .profileimg ul img{
+        float: left;
+        margin-top: 130px;
+        border-radius: 80px;
+        border: 4px solid black;
+        width: 100px;
+        height: 100px;
+    }
+    .coverbottom p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 4px;
+        margin-right: 10px;
+        text-align: justify;
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+    .coverbottom ul h4{
+        padding: 3px;
+        color: rgb(71, 71, 179);
+        font-size: 20px;
+        margin-left: 160px;
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+    }
+    .nav ul {
+        margin-top: 10px;
+        justify-content: center;
+        display: block;
+    }
+    .nav ul li span{
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(71, 71, 179);
+        padding: 10px 10px;
+    }
+}
