@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="round4.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="NavMenu">
+        <div class="navbar">
+            <div class="logo">
+                <a href=""><img src="Foundation.png" style="width: 130px; height: 130px;" alt=""></a>
+                <h5 style="color: #f5eec2;">Gir Wild Life Century</h5>
+            </div>
+            <div class="navlinks">
+                <ul id="nav">
+                    <li class="close"><span onclick="closenav()"><img src="close.png" style="width: 30px;" alt=""></span></li>
+                    <li><a href="#slider">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIAL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="menubtn">
+                <span onclick="opennav()"><img src="ham.png" style="width: 60px; height: 60;" alt=""></span>
+            </div>
+        </div>
+        <h1>GIR WILD LIFE CENTURY</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus, cum cupiditate temporibus quaerat officiis perferendis voluptatibus ipsum est sed doloremque. Eius, libero. Expedita non quo reiciendis adipisci quos sint?<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore architecto delectus, maxime dicta sint officia nostrum adipisci impedit quaerat quidem enim non esse fugiat provident soluta, ducimus eveniet! Temporibus.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laboriosam nobis possimus est libero dignissimos natus amet quasi vitae labore rem explicabo, recusandae in, unde maxime deleniti animi, a tempora.</p>
+    </section>
+    <section class="slider" id="slider">
+        <h1>IMAGE GALLERY</h1>
+        <div class="heroslider">
+            <div class="prev"><span onclick="plusSlides(1)"><</span></div>
+            <div class="next"><span onclick="plusSlides(1)">></span></div>
+            <div class="imageslides">
+            <div class="slide">
+                <img src="wild1.jfif" alt="">
+            </div>
+            <div class="slide">
+                <img src="wild2.jfif" alt="">
+            </div>
+            <div class="slide">
+                <img src="wild3.jfif" alt="">
+            </div>
+            <div class="slide">
+                <img src="wild4.jfif" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1>SERVICES</h1>
+        <div class="service">
+        <div class="srv">
+            <img src="svc.jfif" alt="">
+            <p>JUNGLE SAFARI</p>
+        </div>
+        <div class="srv">
+            <img src="svc1.jfif" alt="">
+            <p>NIGHT CAMPING</p>
+        </div>
+    </div>
+    <H1>MAP</H1>
+        <div class="srv">
+            <img src="svc2.jfif" alt="">
+            <p>GIR MAP</p>
+        </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+        
+        <div class="form">
+            <h3>Comment below</h3>
+            <form action="">
+                <input type="text" placeholder="Enter your name"><br>
+                <input type="tel" placeholder="Enter your mobileno"><br>
+                <input type="email" placeholder="Enter your Email"><br>
+                <input type="text" name="" placeholder="Enter description" class="desc" id="">
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <section class="Contact" id="contact">
+        <div>
+        <div class="timing">
+            <h1>TIMING</h1>
+            <H3>FROM 9:00 AM TO 07:00 PM</H3>
+        </div>
+        <div class="address">
+            <h1>ADDRESS</h1>
+            <address>Gir National park junagadh, gujarat</address>
+        </div>
+        <div class="contact1">
+            
+            <h1>CONTACT</h1>
+            <a href="" style="text-decoration: none; color: black">+91 1800 0000 000</a>
+        </div>
+        </div>
+            <div class="googlemap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84016.86132397356!2d77.65352329945472!3d9.41852234874873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06c155783a31df%3A0xb7056b77ab3f8d0e!2sR%20Reddiapatty%20PHC!5e0!3m2!1sen!2sin!4v1650802057870!5m2!1sen!2sin" width="7000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+    </section>
+    <script>
+        function opennav(){
+            document.getElementById("nav").style.width = "50%"
+        }
+        function closenav(){
+            document.getElementById("nav").style.width = "0"
+        }
+        let slideIndex = 1;
+showSlides(slideIndex)
+
+//Next/previous controls
+function plusSlides(n){
+    showSlides(slideIndex += n)
+}
+
+function currentSlide(n){
+    showSlides(slideIndex = n)
+}
+
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if(n>slides.length){
+        slideIndex = 1
+    }
+    if(n<1){
+        slideIndex = slide.length
+    }
+    for(i=0;i<slides.length;i++){
+        slides[i].style.display = "none";
+    }
+    for(i=0; i<dots.length;i++){
+        dots[i].className = dots[i].className.replace("active","")
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
+}
+    </script>
+</body>
+</html>
