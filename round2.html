@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round2</title>
+    <link rel="stylesheet" href="round2.css">
+</head>
+<body>
+    <div class="cardPage" id="cardpage">
+        <div class="toppart">
+        <!-- <img src="display.png" alt=""> -->
+        </div>
+        <div class="cards">
+        <div class="btn">
+        <button>+</button>
+        </div>
+        <div class="cardlist" id="cardlist">
+            <ul>
+                <li><img src="display.png" style="width: 40px;" alt=""></li>
+                <div class="carddetails"><li>Visa</li><li>Card no</li></div>
+                <li><button onclick="secpage()" id="next">></button></li>
+            </ul>
+            <ul>
+                <li><img src="" id="image" alt=""></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="addCard" id="addcard">
+        <div class="top">
+        <button onclick="firstpage()"><</button>
+        <h2>Add new Card</h2>
+    </div>
+    <div class="form">
+        <form action="" method="get">
+        <input type="tel" name="Cardno" placeholder="Card Number" id="cardno" maxlength="16"><br>
+        <input type="tel" placeholder="DD/YY" id="date" value="" >
+        <input type="tel"  placeholder="CVC" id="cvc" maxlength="3">
+        <br>
+        <input type="button" value="SAVE CARD" id="submit" onclick="firstpage()">
+    </form>
+    </div>
+    </div>
+    <script>
+        function firstpage(){
+            document.getElementById("addcard").style.display = "none";
+            document.getElementById("cardpage").style.display = "block";
+            document.getElementById("cardlist").setAttribute("#image","display.png");
+        }
+        function secpage(){
+            document.getElementById("cardpage").style.display = "none";
+            document.getElementById("addcard").style.display = "block";
+        }
+        function cardadd(){
+            
+        }
+    </script>
+</body>
+</html>
