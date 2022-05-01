@@ -1,0 +1,39 @@
+.button{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 8px;
+}
+.button button{
+    font-size: 10px;
+    padding: 8px 25px;
+    background-color: rgba(235, 235, 60, 0.6);
+    box-shadow: 2px;
+    border: 1px solid black;
+}
+.button button:hover{
+    background-color: aqua;
+    animation-name: animate1;
+    transition: 2s;
+}
+@keyframes animate1{
+    from{
+        background-size: 20px;
+    }
+}
+.table{
+    margin-top: 50px;
+    display: flex;
+    max-height: 310px;
+}
+.table div{
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+li{
+    padding: 5px 0;
+    text-align: center;
+    list-style: none;
+}
+col{
+    background-color: aqua;
+}
